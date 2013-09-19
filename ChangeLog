@@ -1,0 +1,30 @@
+2008-03-29  Martin Landers  <elk@treibgut.net> (Release 0.1.2)
+
+	* Rakefile: Bumped revision to 0.1.2.
+	* test/test.rb: Added an example that uses MixedForm.
+
+2008-03-29  R.T. Lechow <podoboo@gmail.com>
+
+	* lib/mixedform.rb: New file, adds --mixedform support.
+	* lib/dialog.rb: Added mixedform.rb to includes.
+
+2008-03-24  Martin Landers  <elk@treibgut.net>
+
+	* ChangeLog: New file.
+	* form.rb: Fixed example in comment.
+
+2008-03-03  Martin Landers  <elk@treibgut.net> (Release 0.1.1)
+
+	* Rakefile: Updated E-Mail address.
+	Bumped revision to 0.1.1.
+	* lib/base.rb: Updated E-Mail address.
+	* README: Updated E-Mail address.
+	Updated copyright clause.
+
+2006-10-20  Martin Landers  <elk@treibgut.net> (Release 0.1.0)
+
+	* lib/*.rb: Initial implementation of the gem.
+	* test/*.rb: Initial "tests", only manual for now.
+	* COPYING: New file, GPL license.
+	* Rakefile: Initial buildfile for the gem.
+	* README: RDoc for the gem.
