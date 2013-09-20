@@ -21,7 +21,7 @@ module Dialog
     # Sets the default date to display
     def date(d)
       if !d.kind_of?(Date)
-        d = ParseDate::parsedate(d)
+        d = Date.parse(d)
       end
       @options.box_options[3..5] = [d.day, d.month, d.year]
     end

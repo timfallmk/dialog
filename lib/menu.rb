@@ -22,7 +22,7 @@ module Dialog
 
     def initialize(*options)
       @choices = []
-      super *options
+      super(*options)
       @options.box_options[3] ||= 0 # Default menu-height 
     end
 
@@ -34,7 +34,8 @@ module Dialog
     end
 
     def box_options
-      super + @choices.flatten
+      super
+      @choices.flatten
     end
 
     def menu_height(v)

@@ -59,7 +59,7 @@ module Dialog
         STDERR.reopen(pe[1]) if pe
         pe[1].close if pe
 
-	exec *command
+	exec(*command)
       end
 
       # parent

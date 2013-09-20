@@ -22,7 +22,7 @@ module Dialog
 
     def initialize(*options)
       @fields = []
-      super *options
+      super(*options)
       @options.box_options[3] ||= 0 # Default form-height
     end
 
@@ -32,7 +32,8 @@ module Dialog
     end
 
     def box_options
-      super + @fields.flatten
+      super
+      @fields.flatten
     end
 
     def form_height(v)
