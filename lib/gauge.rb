@@ -23,16 +23,16 @@ module Dialog
     # Sets the value to display
     def complete(p)
       @completed = case p
-        when Fixnum: p
-        when Bignum: p
-        when Float: (p*100).to_i
+        when Fixnum then p
+        when Bignum then p
+        when Float then (p*100).to_i
         else p
       end
       @stdin.puts @completed if @stdin 
     end
 
     def arguments
-      super << @completed || 0
+      super @completed || 0
     end
 
     # Make sure wait returns by closing stdin

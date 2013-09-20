@@ -22,7 +22,7 @@ module Dialog
     # Sets the default file to display
     def file(f)
       @options.box_options[0] = case f
-        when File: f.path
+        when File f.path
 	else f.to_s
       end
     end
